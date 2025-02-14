@@ -1,0 +1,18 @@
+# Copyright (c) 2025 Espressif Systems (Shanghai) Co., Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  self:
+    west-commands: scripts/west-commands.yml
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: tambor
+      url-base: https://github.com/LucasTambor
+
+  projects:
+    - name: zephyr
+      remote: tambor
+      revision: lpcore/wake_hp
+      import: true
